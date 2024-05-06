@@ -1,193 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
-@media (max-width: 430px) {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkcyan;
+    width: 100%;
+    padding: 10px;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-    }
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: darkcyan;
-        width: 100%;
-        padding: 10px;
-    }
+header a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-    header a {
-        color: white;
-        margin: 0 10px;
-        text-decoration: none;
-        font-weight: 500;
-    }
+header a .fas {
+    font-size: 24px;
+    /* Adjust icon size */
+}
 
-    header a .fas {
-        font-size: 24px; /* Adjust icon size */
-    }
+.main_page_img1 {
+    background-image: url('img/main_page.png');
+    /* Adjust path to image */
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+}
 
-    .main_page_img1 {
-        background-image: url('img/main_page.png'); /* Adjust path to image */
-        background-size: cover;
-        height: 200px;
-        background-position: center;
-    }
+.main_page_para1 {
+    margin-top: 20px;
+}
 
-    .main_page_para1 {
-        margin-top: 20px;
-    }
+.main_page_para1 h2 {
+    text-align: center;
+    font-weight: 300;
+}
 
-    .main_page_para1 h2 {
-        text-align: center;
-        font-weight: 300;
-    }
+.main_page_para1 p {
+    padding: 8px 20px;
+}
 
-    .main_page_para1 p {
-        padding: 8px 20px;
-    }
-
-    .main_page_img2 {
-        background-image: url('img/main_page2.jpg'); /* Adjust path to image */
-        height: 200px;
-        background-size: cover;
-        background-position:center;
-    }
+.main_page_img2 {
+    background-image: url('img/main_page2.jpg');
+    /* Adjust path to image */
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
 
 
-     /* start footer */
+/* start footer */
 
-    footer {
-        background-color: darkcyan;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 10px;
-    }
+footer {
+    background-color: darkcyan;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
 
-    footer div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; /* Align icons vertically in the footer */
-    }
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Align icons vertically in the footer */
+}
 
-    footer div a {
-        margin: 0 10px; /* Adjust spacing */
-        text-align: center;
-        font-size: 14px;
-        color: white;
-        text-decoration: none;
-    }
-    /* footer end */
+footer div a {
+    margin: 0 10px;
+    /* Adjust spacing */
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
 
-    /* Contact us Page start*/
-    .container {
-        max-width: 430px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    
-    form {
-        background-color: #f9f9f9;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    
-    h2 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .input-container {
-        margin-bottom: 15px;
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-    
-    textarea {
-        resize: vertical;
-    }
-    
-    button {
-        width: 100%;
-        padding: 10px;
-        background-color:darkcyan;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    /* button:hover {
+/* footer end */
+
+/* Contact us Page start*/
+.container {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* button:hover {
         background-color: #0056b3;
     } */
-    
-    .follow-us {
-        margin-top: 20px;
-        text-align: center;
-    }
-    
-    .icon {
-        margin-top: 10px;
-    }
-    
-    .icon i {
-        margin-right: 10px;
-        font-size: 24px;
-    }
-    
-    .fa-facebook {
-        color: 	#1877F2;
-    }
-    .fa-twitter{
-        color: 	#1DA1F2;
-    }
-    .fa-instagram{
-        color: 	#fccc63;
-    }
-    .fa-youtube{
-        color: 	#FF0000;
-    }
-    /* Contact us Page end*/
+
+.follow-us {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+.icon i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.fa-facebook {
+    color: #1877F2;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    color: #fccc63;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+/* Contact us Page end*/
 
 
-    /* Accommodation page start */
+/* Accommodation page start */
 
-    .container_accomo {
-        max-width: 430px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    
-    .accomo_imgs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-    }
-    
-    .img-wrapper {
-        width: 48%; /* Two images per row */
-        margin-bottom: 20px;
-    }
-    
-    .img-wrapper img {
-        width: 100%;
-        height: 130px;
-        object-fit:cover;
-    }
-    
+.container_accomo {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    /* Accommodation page end */
+.accomo_imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
+
+.img-wrapper {
+    width: 48%;
+    /* Two images per row */
+    margin-bottom: 20px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+
+/* Accommodation page end */
