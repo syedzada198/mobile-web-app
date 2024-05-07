@@ -17,6 +17,10 @@
     color: white !important;
 }
 
+.nav-header1 h3 a{
+    color: white !important;
+    text-decoration: none;
+}
 h3.ui-title {
     margin-left: 10px !important;
 }
