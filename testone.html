@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Submit Button Popup</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <style>
+        /* Custom color, font, and border-radius */
+        .ui-btn-darkcyan {
+            background-color: darkcyan !important;
+            color: white !important;
+            border-radius: 10px !important;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<form id="myForm">
+    <!-- Form fields -->
+    <input type="text" id="name" name="name" required>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Popup -->
+    <div data-role="popup" id="popup" data-theme="darkcyan" class="ui-content">
+        <p>Successfully submitted</p>
+        <a href="#" class="ui-btn ui-btn-darkcyan" data-rel="back">Close</a>
+    </div>
+
+    <!-- Submit Button -->
+    <div data-role="content">
+        <button id="submitBtn" data-theme="darkcyan" class="ui-btn ui-btn-darkcyan" type="submit">Submit</button>
+    </div>
+</form>
+
+<script>
+    $(document).on("pagecreate", function() {
+        // Show popup when form is submitted and valid
+        $("#myForm").on("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            if (this.checkValidity()) { // Check if form is valid
+                $("#popup").popup("open", {
+                    positionTo: "window",
+                    transition: "pop"
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

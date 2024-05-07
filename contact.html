@@ -11,6 +11,13 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <style>
+        .ui-btn-darkcyan {
+            background-color: darkcyan !important;
+            color: white !important;
+            border-radius: 10px !important;
+        }
+    </style>
 </head>
 
 <body style="background-color: white !important;">
@@ -23,7 +30,7 @@
     </div>
     <div data-role="main" class="ui-content">
         <h2 class="form-heading">Contact Form</h2>
-        <form id="contactForm" class="contact-form">
+        <form class="contact-form" id="myform">
             <div data-role="fieldcontain">
                 <input type="text" name="name" id="name" required placeholder="Enter your Name">
             </div>
@@ -36,7 +43,17 @@
             <div data-role="fieldcontain">
                 <textarea name="message" id="message" required placeholder="Type your message here" style="border: 1px solid grey !important;"></textarea>
             </div>
-            <button type="submit" data-theme="b" class="contact-btn">Submit</button>
+        
+            <!-- Popup -->
+            <div data-role="popup" id="popup" data-theme="darkcyan" class="ui-content">
+                <p>Successfully submitted</p>
+                <a href="index.html" class="ui-btn ui-btn-darkcyan">Close</a>
+            </div>
+        
+            <!-- Submit Button -->
+            <div data-role="content">
+                <button id="submitBtn" data-theme="darkcyan" class="ui-btn ui-btn-darkcyan" type="submit">Submit</button>
+            </div>
         </form>
     </div>
 
@@ -64,6 +81,22 @@
             </ul>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+    $(document).on("pagecreate", function() {
+        // Show popup when form is submitted and valid
+        $("#myform").on("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            if (this.checkValidity()) { // Check if form is valid
+                $("#popup").popup("open", {
+                    positionTo: "window",
+                    transition: "pop"
+                });
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
