@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css.css">
+    
     <title>Accommodation</title>
+    <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">Logo</a>
-        <a href="index.html"><i class="fas fa-bars" style="color: #ffffff;"></i></a>
-    </header>
+    <div data-role="header" data-position="fixed" class="custom-header">
+        <div data-role="header" class="nav-header1">
+            <h3>Logo</h3>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
 
     <main>
-        <div class="container_accomo">
-            <h2>Accommodation</h2>
-            <div class="accomo_imgs">
-                <div class="img-wrapper">
-                    <img src="assets/img/hostel1.jpg" alt="error">
-                </div>
-                <div class="img-wrapper">
-                    <img src="assets/img/hostel2.jpg" alt="error">
-                </div>
-                <div class="img-wrapper">
-                    <img src="assets/img/hostel3.jpg" alt="error">
-                </div>
-                <div class="img-wrapper">
-                    <img src="assets/img/hostel4.jpg" alt="error">
-                </div>
+        <div data-role="main" class="ui-content">
+          <h2 class="acco-h2">Accommodation</h2>
+          <div class="image-row">
+            <div class="image-wrapper">
+              <img src="assets/img/hostel1.jpg" alt="error">
             </div>
-            <p><strong>Room :</strong> Experience comfort and convenience in our cozy hostel rooms.</p>
+            <div class="image-wrapper">
+              <img src="assets/img/hostel2.jpg" alt="error">
+            </div>
+            <div class="image-wrapper">
+              <img src="assets/img/hostel3.jpg" alt="error">
+            </div>
+            <div class="image-wrapper">
+              <img src="assets/img/hostel4.jpg" alt="error">
+            </div>
+          </div>
+          <div class="acco-p"><p>1. <strong>Room:</strong> Experience comfort and convenience in our cozy hostel rooms.</p>
+            <p>2. <strong>Wifi:</strong> We're committed to providing our students with top-notch WiFi connectivity for seamless learning experiences.</p></div>
         </div>
-        
-    </main>
+      </main>
+      <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#programs" class="ui-btn"><i class="fa-solid fa-star"></i><br>Programs</a></li>
+                <li><a href="#faqs" class="ui-btn"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
+                <li><a href="#home" class="ui-btn"><i class="fa-solid fa-house"></i><br>Home</a></li>
+                <li><a href="#news" class="ui-btn"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
+                <li><a href="#contact-page" class="ui-btn"><i class="fa-regular fa-address-book"></i><br>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

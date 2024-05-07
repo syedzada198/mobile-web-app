@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css.css">
-    <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
     <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<style>
+
+    input{
+        border: 1px solid grey !important;
+        border-radius: 10px !important;
+    }
+    .form-heading {
+        text-align: center;
+    }
+</style>
 </head>
+
 <body>
 
-    <header>
-        <a href="index.html" class="logo">Logo</a>
-        <a href="index.html"><i class="fas fa-bars" style="color: #ffffff;"></i></a>
-    </header>
-
-    <div class="container">
-        <form action="">
-            <h2>Contact Form</h2>
-            <div class="input-container">
-                <input type="text" placeholder="Enter your name" required="">
-            </div>
-            <div class="input-container">
-                <input type="email" placeholder="Enter Email address" required="">
-            </div>
-            <div class="input-container">
-                <textarea name="text" placeholder="Enter your message" rows="6"></textarea>
-            </div>
-            <div class="input-container">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-        <div class="follow-us">
-            <h3>Follow Us</h3>
-            <div class="icon">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-            </div>
+    <div data-role="header" data-position="fixed" class="custom-header">
+        <div data-role="header" class="nav-header1">
+            <h3>Logo</h3>
+            <i class="fa-solid fa-bars"></i>
         </div>
     </div>
-    <footer>
-        <div>
-            <a href="index.html">
-                <figure>
-                    <img src="assets/img/download.png" alt="icon">
-                    <figcaption>Download</figcaption>
-                </figure>
-            </a>
-            <a href="index.html">
-                <figure>
-                    <img src="assets/img/edit.png" alt="icon">
-                    <figcaption>Info-session</figcaption>
-                </figure>
-            </a>
-            <a href="index.html">
-                <figure>
-                    <img src="assets/img/resume.png" alt="icon">
-                    <figcaption>Online Application</figcaption>
-                </figure>
-            </a>
-            <a href="index.html">
-                <figure>
-                    <img src="assets/img/mortarboard.png" alt="icon">
-                    <figcaption>Campus</figcaption>
-                </figure>
-            </a>
+    <div data-role="main" class="ui-content">
+        <h2 class="form-heading">Contact Form</h2>
+        <form id="contactForm">
+            <div data-role="fieldcontain">
+                <input type="text" name="name" id="name" required placeholder="Enter your Name">
+            </div>
+            <div data-role="fieldcontain">
+                <input type="email" name="email" id="email" required placeholder="Enter your Email">
+            </div>
+            <div data-role="fieldcontain">
+                <input type="text" name="subject" id="subject" required placeholder="Enter Subject">
+            </div>
+            <div data-role="fieldcontain">
+                <textarea name="message" id="message" required placeholder="Enter Your message"></textarea>
+            </div>
+            <button type="submit" data-theme="b">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="follow-us">
+        <h3>Follow Us</h3>
+        <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
         </div>
-    </footer>
-    
+    </div>
+    </div>
+    </div>
+    <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#programs" class="ui-btn"><i class="fa-solid fa-star"></i><br>Programs</a></li>
+                <li><a href="#faqs" class="ui-btn"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
+                <li><a href="#home" class="ui-btn"><i class="fa-solid fa-house"></i><br>Home</a></li>
+                <li><a href="#news" class="ui-btn"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
+                <li><a href="#contact-page" class="ui-btn"><i class="fa-regular fa-address-book"></i><br>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>

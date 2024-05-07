@@ -5,82 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css.css">
+    <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .nav-header1{
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-            margin-right: 20px;
-        }
-        .main-page-img1 {
-            background-image: url(assets/img/mainpage.jpg); 
-            background-size: cover;
-            background-position: center;
-            height: 200px;
-            text-align: center;
-            color: white;
-            padding-top: 60px;
-        }
-        .paragraph h2{
-            text-align: center;
-            margin:20px 0;
-        }
-        .paragraph p{
-            margin: 10px 20px;
-        }
-        .main-page-img2{
-            background-image: url(assets/img/mainpage2.jpg); 
-            background-size: cover;
-            background-position: center;
-            height: 200px;
-            text-align: center;
-            color: white;
-        }
-        
-    </style>
 </head>
 
 <body>
     <div data-role="page" id="page1">
-    <div data-role="header" data-position="fixed" class="custom-header" style="background-color: darkcyan; border: none;">
-        <div data-role="header" class="nav-header1" style="background-color: darkcyan; border: none; color: white;">
-            <h3>Logo</h3>
-            <i class="fa-solid fa-bars"></i>
+        <div data-role="header" data-position="fixed" class="custom-header">
+            <div data-role="header" class="nav-header1">
+                <h3>Logo</h3>
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-    </div>
 
-   <main>
-    <div class="main-page-img1">
-    </div>
-    <div class="paragraph">
-        <h2>Student Exchange Program</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus nisi dolore doloribus quis necessitatibus aliquid, nihil numquam hic unde eligendi modi nostrum laboriosam ducimus ipsa voluptates libero,</p>
-    </div>
-    <div class="main-page-img2">
-    </div>
-   </main>
-   <div data-role="footer" data-position="fixed" style="border: none;">
-    <div data-role="navbar" >
-        <ul style="background-color: darkcyan;">
-            <li><a href="#programs" class="ui-btn" style="color: white; background-color: darkcyan; border: none;"><i class="fa-solid fa-star"></i><br>Programs</a></li>
-            <li><a href="#faqs" class="ui-btn" style="color: white; background-color: darkcyan; border: none;"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
-            <li><a href="#home" class="ui-btn" style="color: white; background-color: darkcyan; border: none;"><i class="fa-solid fa-house"></i><br>Home</a></li>
-            <li><a href="#news" class="ui-btn" style="color: white; background-color: darkcyan; border: none;"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
-            <li><a href="#contact-page" class="ui-btn" style="color: white; background-color: darkcyan; border: none;"><i class="fa-regular fa-address-book"></i><br>Contact</a></li>
-        </ul>
-    </div>
-</div>
-    <script src="assets/js.js"></script>
+        <main>
+            <div class="main-page-img1">
+            </div>
+            <div class="paragraph">
+                <h2>Student Exchange Program</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus nisi dolore doloribus quis
+                    necessitatibus aliquid, nihil numquam hic unde eligendi modi nostrum laboriosam ducimus ipsa
+                    voluptates libero,</p>
+            </div>
+            <div class="main-page-img2">
+            </div>
+        </main>
+        <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#programs" class="ui-btn"><i class="fa-solid fa-star"></i><br>Programs</a></li>
+                    <li><a href="#faqs" class="ui-btn"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
+                    <li><a href="#home" class="ui-btn"><i class="fa-solid fa-house"></i><br>Home</a></li>
+                    <li><a href="#news" class="ui-btn"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
+                    <li><a href="#contact-page" class="ui-btn"><i class="fa-regular fa-address-book"></i><br>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="assets/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-header1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+
+    background-color: darkcyan !important;
+    border: none !important;
+    color: white !important;
+}
+
+.custom-header {
+    background-color: darkcyan !important;
+    border: none !important;
+}
+
+.main-page-img1 {
+    background-image: url(img/mainpage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+}
+
+.paragraph h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.paragraph p {
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.main-page-img2 {
+    background-image: url(img/mainpage2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+
+.footer {
+    border: none !important;
+}
+
+.footer div {
+    border: none !important;
+}
+
+.footer div ul {
+    background-color: darkcyan !important;
+}
+
+.footer div ul a {
+    color: white !important;
+    background-color: darkcyan !important;
+    border: none !important;
+}
+
+
+
+/* Accommodation page */
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-wrapper {
+    width: 50%;
+    padding: 5px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.acco-h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.acco-p {
+    margin: 20px 0;
+}
+
+.acco-p p {
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    .image-wrapper img {
+        height: 130px;
+    }
+
+
+}
+
+
+/* Download link Page */
+
+
+.educational {
+    margin: 20px 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.educational-h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.educational ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.educational ul li {
+    margin-bottom: 10px;
+}
+
+.educational ul li a {
+    text-decoration: none;
+    color: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 10;
+}
+
+.educational ul li a:hover {
+    text-decoration: underline;
+}
+
+.educational ul li .icon {
+    margin-left: 10px;
+}
