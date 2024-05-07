@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .nav-header1 {
@@ -13,6 +14,10 @@
     background-color: darkcyan !important;
     border: none !important;
     color: white !important;
+}
+
+h3.ui-title {
+    margin-left: 10px !important;
 }
 
 .custom-header {
@@ -49,6 +54,15 @@
     color: white;
 }
 
+.main-page-img3 {
+    background-image: url(img/mainpage3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
 
 .footer {
     border: none !important;
@@ -68,7 +82,92 @@
     border: none !important;
 }
 
+/* contact page */
+.follow-us {
+    padding: 20px;
+}
 
+.follow-us h2 {
+    text-align: center;
+}
+
+.follow-us .icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+
+}
+
+.follow-us .icon i {
+    padding: 0 10px;
+}
+
+input {
+    border: 1px solid grey !important;
+    padding: 12px !important;
+    border-radius: 20px !important;
+
+
+}
+
+.contact-form {
+    margin-top: 20px !important;
+}
+
+.ui-content {
+    background-color: white !important;
+}
+
+.form-heading {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.follow-us {
+    background-color: white !important;
+
+}
+
+.ui-shadow-inset {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.ui-field-contain {
+    border: none !important;
+}
+
+.ui-input-text {
+    margin: 0 !important;
+}
+
+.contact-form textarea {
+    border-radius: 20px;
+    height: 120px !important;
+}
+
+.contact-btn {
+    background-color: darkcyan !important;
+    border: none !important;
+    border-radius: 20px !important;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    color: #FCAF45;
+}
+
+.fa-facebook {
+    color: #1877F2;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
 
 /* Accommodation page */
 
