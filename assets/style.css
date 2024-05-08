@@ -95,7 +95,11 @@ h3.ui-title {
 .follow-us h2 {
     text-align: center;
 }
-
+.ui-btn-darkcyan {
+    background-color: darkcyan !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
 .follow-us .icon {
     margin-top: 20px;
     display: flex;
