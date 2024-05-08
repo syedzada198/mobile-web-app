@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <style>
+        /* Your custom styles */
+    </style>
+</head>
+
+<body>
+<header>
+    <div data-role="header">
+        <div class="nav-header1">
+            <h3 class="logo-heading"><a href="index.html">Exchange Portal</a></h3>
+            <a href="#menuPanel" class="icon-set"><i class="fas fa-bars"></i></a> <!-- Updated FontAwesome class -->
+        </div>
+        <div data-role="panel" id="menuPanel" data-position="right" data-display="overlay">
+            <ul data-role="listview">
+                <li><a href="#" data-rel="close"><i class="fas fa-times"></i></a></li> <!-- Updated FontAwesome class -->
+                <li><a href="download.html" data-rel="close">Download</a></li>
+                <li><a href="application.html" data-rel="close">Application</a></li>
+                <li><a href="accomo.html" data-rel="close">Accommodation</a></li>
+                <li><a href="About.html" data-rel="close">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="acco-h2 news-h2">News</div>
+
+<div class="ui-grid-solo">
+    <!-- Your news blocks -->
+</div>
+
+<div data-role="footer" data-position="fixed" style="border: none;" class="footer">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="accomo.html" class="ui-btn"><i class="fas fa-star"></i><br>Programs</a></li> <!-- Updated FontAwesome class -->
+            <li><a href="faqs.html" class="ui-btn"><i class="fas fa-question"></i><br>FAQs</a></li> <!-- Updated FontAwesome class -->
+            <li><a href="index.html" class="ui-btn"><i class="fas fa-home"></i><br>Home</a></li> <!-- Updated FontAwesome class -->
+            <li><a href="news.html" class="ui-btn"><i class="fas fa-newspaper"></i><br>News</a></li> <!-- Updated FontAwesome class -->
+            <li><a href="contact.html" class="ui-btn"><i class="far fa-address-book"></i><br>Contact</a></li> <!-- Updated FontAwesome class -->
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript dependencies are not needed here, so I removed them -->
+
+</body>
+</html>
