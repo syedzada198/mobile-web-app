@@ -11,9 +11,10 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
+    
     <div data-role="header" data-position="fixed" class="custom-header">
         <div data-role="header" class="nav-header1">
-            <h3>Logo</h3>
+            <h3><a href="index.html">Exchange Portal</a></h3>
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
@@ -32,6 +33,9 @@
         <li><a href="#">Sample Paper <i class="fas fa-download icon"></i></a></li>
         <li><a href="#">Guidelines <i class="fas fa-download icon"></i></a></li>
         <li><a href="#">Procedure <i class="fas fa-download icon"></i></a></li>
+        <li><a href="#">Online course <i class="fas fa-download icon"></i></a></li>
+        <li><a href="#">check new updats <i class="fas fa-download icon"></i></a></li>
+        
     </ul>
 </div>
 <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
@@ -46,5 +50,14 @@
         </ul>
     </div>
 </div>
+
+
+<script>
+    $(document).on("pagecreate", function () {
+      $("#menu-icon").on("click", function () {
+        $("#menu").slideToggle();
+      });
+    });
+  </script>
 </body>
 </html>

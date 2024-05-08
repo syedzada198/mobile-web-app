@@ -24,7 +24,10 @@
 h3.ui-title {
     margin-left: 10px !important;
 }
-
+a{
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
 .custom-header {
     background-color: darkcyan !important;
     border: none !important;
@@ -49,7 +52,19 @@ h3.ui-title {
     margin: 10px 20px;
     text-align: center;
 }
+.find-out-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px !important;
+}
+.find-out-btn a i{
+    margin-left: 10px;
+}
+.find-out-btn a{
+    display: inline !important;
 
+    
+}
 .main-page-img2 {
     background-image: url(img/mainpage2.jpg);
     background-size: cover;
