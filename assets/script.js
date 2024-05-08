@@ -33,3 +33,7 @@ $(document).ready(function() {
         accoP.append(paragraph);
     });
 });
+
+
+
+

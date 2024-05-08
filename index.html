@@ -13,12 +13,25 @@
 </head>
 
 <body>
-        <div data-role="header" data-position="fixed" class="custom-header">
-            <div data-role="header" class="nav-header1">
-                <h3><a href="index.html">Exchange Portal</a></h3>
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
+    <header>
+        <div data-role="header">
+      <div class="nav-header1">
+        <h3 class="logo-heading"><a href="index.html">Exchange Portal</a></h3>
+      <a href="#menuPanel" class="icon-set"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <div data-role="panel" id="menuPanel" data-position="right" data-display="overlay" >
+        <ul data-role="listview">
+        <li><a href="#" data-rel="close"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="download.html" data-rel="close">Download</a></li>
+          <li><a href="application.html" data-rel="close">Application</a></li>
+          <li><a href="accomo.html" data-rel="close">Accommodation</a></li>
+          <li><a href="About.html" data-rel="close">About Us</a></li>
+         <!--  <li><a href="#" data-rel="close">Link 5</a></li> -->
+        </ul>
+      </div>
+    </div>
+    </header>
+    
 
         <main>
             <div class="main-page-img1">

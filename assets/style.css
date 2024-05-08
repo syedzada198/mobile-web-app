@@ -9,19 +9,27 @@
 .nav-header1 {
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
+    justify-content: space-between !important;
+    
 
     background-color: darkcyan !important;
     border: none !important;
     color: white !important;
 }
-
-.nav-header1 h3 a{
+.nav-header1 .icon-set i{
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.logo-heading {
+    padding: 10px;
+}
+.logo-heading a{
     color: white !important;
     text-decoration: none;
+    
 }
-h3.ui-title {
+h2.ui-title {
     margin-left: 10px !important;
 }
 a{
