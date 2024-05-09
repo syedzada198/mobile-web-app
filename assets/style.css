@@ -118,6 +118,7 @@ a{
 .follow-us h2 {
     text-align: center;
 }
+
 .ui-btn {
     background-color: darkcyan !important;
     color: white !important;
@@ -167,11 +168,6 @@ textarea{
     margin-top: 5px;
 }
 
-.follow-us {
-    /* background-color: white !important; */
-
-}
-
 .ui-shadow-inset {
     box-shadow: none !important;
     border: none !important;
@@ -189,7 +185,6 @@ textarea{
     border-radius: 20px;
     height: 120px !important;
 }
-
 .contact-btn {
     background-color: darkcyan !important;
     border: none !important;
