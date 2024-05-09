@@ -298,6 +298,7 @@ textarea{
 
 .ui-body{
     display: flex !important;
+    justify-content: space-evenly;
     padding: 0 !important;
     max-height: 165px !important;
 }
@@ -356,7 +357,42 @@ label{
 
 /* Program Page */
 
+.set{
+    max-height: 170px !important;
+}
 
-.change-bg {
+.set .ui-block-a{
+    width: 40%;
+    padding: 0 !important;
+    
+}
+.set .ui-block-a{
+    width: 140px !important;
+    margin-left: 0 !important;
+}
+.set img{
+    width: 140px !important;
+    object-fit: cover;
+}
+.set .ui-block-b{
+    /* width: 60% !important; */
+    padding: 15px;
+
+}
+
+.set .ui-block-b p{
+    margin-top: 5px;
+}
+.ui-grid-a{
+    margin-bottom: 10px;
     background-color: #e9e9e9 !important;
+}
+
+.remove-bg {
+    background-color: #e9e9e9 !important;
+}
+
+.ui-input-search:after {
+    display: flex !important;
+    justify-content: end !important;
 }
