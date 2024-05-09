@@ -34,6 +34,18 @@ $(document).ready(function() {
     });
 });
 
-
-
-
+function validateForm() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    
+    if (username === "" || email === "") {
+      alert("Please fill in all fields");
+      return false;
+    }
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Invalid email address");
+      return false;
+    }
+    return true;
+  }
