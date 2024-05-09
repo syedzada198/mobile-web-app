@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Accordion Example</title>
+    <title>Faqs</title>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -12,82 +13,116 @@
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
+
 <body>
     <header>
         <div data-role="header">
-      <div class="nav-header1">
-        <h3 class="logo-heading"><a href="index.html">Exchange Portal</a></h3>
-      <a href="#menuPanel" class="icon-set"><i class="fa-solid fa-bars"></i></a>
-      </div>
-      <div data-role="panel" id="menuPanel" data-position="right" data-display="overlay" >
-        <ul data-role="listview" style="background-color: darkcyan;">
-        <li><a href="#" data-rel="close"><i class="fa-solid fa-xmark"></i></a></li>
-          <li><a href="download.html" data-rel="close">Download</a></li>
-          <li><a href="application.html" data-rel="close">Application</a></li>
-          <li><a href="accommodation.html" data-rel="close">Accommodation</a></li>
-          <li><a href="About.html" data-rel="close">About Us</a></li>
-         <!--  <li><a href="#" data-rel="close">Link 5</a></li> -->
-        </ul>
-      </div>
-    </div>
+            <div class="nav-header1">
+                <h3 class="logo-heading"><a href="index.html">Exchange Portal</a></h3>
+                <a href="#menuPanel" class="icon-set"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div data-role="panel" id="menuPanel" data-position="right" data-display="overlay">
+                <ul data-role="listview" style="background-color: darkcyan;">
+                    <li><a href="#" data-rel="close"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a href="download.html" data-rel="close">Download</a></li>
+                    <li><a href="application.html" data-rel="close">Application</a></li>
+                    <li><a href="accommodation.html" data-rel="close">Accommodation</a></li>
+                    <li><a href="about.html" data-rel="close">About Us</a></li>
+                    <!--  <li><a href="#" data-rel="close">Link 5</a></li> -->
+                </ul>
+            </div>
+        </div>
     </header>
     <div class="collaps">
         <h1>Click on the question to get the answer</h1>
     </div>
-<div data-role="collapsible-set" data-theme="a" data-content-theme="a">
-    <div data-role="collapsible">
-        <h3>What is a student exchange program?</h3>
-        <p>A student exchange program is a program where students from one educational institution study at another institution, typically in a different country, for a certain period of time.</p>
+    <div data-role="collapsible-set" data-theme="a" data-content-theme="a" class="set-faqs">
+        <div data-role="collapsible">
+            <h3>What is a student exchange program?</h3>
+            <p>A student exchange program is a program where students from one educational institution study at another
+                institution, typically in a different country, for a certain period of time.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>How long do student exchange programs typically last?</h3>
+            <p>Student exchange programs can vary in duration, but they often last for a semester or academic year.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>What are the benefits of participating in a student exchange program?</h3>
+            <p>Some benefits include experiencing a different culture, improving language skills, gaining independence,
+                and making international connections.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>How can I apply for a student exchange program?</h3>
+            <p>You can usually apply through your educational institution's international office or department
+                responsible for exchange programs. They will provide information on application requirements and
+                deadlines.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Are there scholarships available for student exchange programs?</h3>
+            <p>Yes, there are often scholarships and financial aid options available to help students cover the costs of
+                participating in exchange programs.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>What is Exchange Horizon?</h3>
+            <p>Exchange Horizon is a platform that connects students and educational institutions worldwide,
+                facilitating student exchange programs and cultural exchange opportunities.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>How does Exchange Horizon work?</h3>
+            <p>Exchange Horizon allows students to search for exchange programs, apply to participate, and connect with
+                partner institutions. It also provides resources and support throughout the exchange process.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Can I use Exchange Horizon to find exchange programs in specific countries?</h3>
+            <p>Yes, Exchange Horizon offers a search feature that allows you to filter exchange programs based on
+                factors such as location, duration, and academic field.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Is Exchange Horizon available for both undergraduate and graduate students?</h3>
+            <p>Yes, Exchange Horizon caters to both undergraduate and graduate students, offering a variety of exchange
+                opportunities at different academic levels.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Are there any fees associated with using Exchange Horizon?</h3>
+            <p>Exchange Horizon is free for students to use. However, there may be fees associated with participating in
+                specific exchange programs, such as application fees or tuition costs.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>What is a Bachelor of Arts (B.A.) degree?</h3>
+            <p>A Bachelor of Arts degree is an undergraduate academic degree awarded upon completion of a program of
+                study typically in the liberal arts, humanities, social sciences, or fine arts.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>What are some common majors within a Bachelor of Arts program?</h3>
+            <p>Common majors include English, History, Psychology, Sociology, Political Science, Philosophy,
+                Anthropology, Art History, and Languages (such as Spanish, French, or German).</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>What skills do students typically develop during a Bachelor of Arts program?</h3>
+            <p>Students often develop critical thinking, communication, research, writing, analytical, and
+                problem-solving skills. They also gain cultural awareness and often engage in creative expression.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Are there opportunities for internships or hands-on experience during a Bachelor of Arts program?</h3>
+            <p>Many Bachelor of Arts programs offer internship opportunities, research projects, study abroad programs,
+                and other forms of experiential learning to help students gain practical skills and real-world
+                experience in their chosen field.</p>
+        </div>
+
     </div>
-    <div data-role="collapsible">
-        <h3>How long do student exchange programs typically last?</h3>
-        <p>Student exchange programs can vary in duration, but they often last for a semester or academic year.</p>
+    <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="program.html" class="ui-btn"><i class="fa-solid fa-star"></i><br>Programs</a></li>
+                <li><a href="faqs.html" class="ui-btn"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
+                <li><a href="index.html" class="ui-btn"><i class="fa-solid fa-house"></i><br>Home</a></li>
+                <li><a href="news.html" class="ui-btn"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
+                <li><a href="contact.html" class="ui-btn"><i class="fa-regular fa-address-book"></i><br>Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div data-role="collapsible">
-        <h3>What are the benefits of participating in a student exchange program?</h3>
-        <p>Some benefits include experiencing a different culture, improving language skills, gaining independence, and making international connections.</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>How can I apply for a student exchange program?</h3>
-        <p>You can usually apply through your educational institution's international office or department responsible for exchange programs. They will provide information on application requirements and deadlines.</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>Are there scholarships available for student exchange programs?</h3>
-        <p>Yes, there are often scholarships and financial aid options available to help students cover the costs of participating in exchange programs.</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>What is Exchange Horizon?</h3>
-        <p>Exchange Horizon is a platform that connects students and educational institutions worldwide, facilitating student exchange programs and cultural exchange opportunities.</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>How does Exchange Horizon work?</h3>
-        <p>Exchange Horizon allows students to search for exchange programs, apply to participate, and connect with partner institutions. It also provides resources and support throughout the exchange process.</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>Can I use Exchange Horizon to find exchange programs in specific countries?</h3>
-        <p>Yes, Exchange Horizon offers a search feature that allows you to filter exchange programs based on factors such as location, duration, and academic field.</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>Is Exchange Horizon available for both undergraduate and graduate students?</h3>
-        <p>Yes, Exchange Horizon caters to both undergraduate and graduate students, offering a variety of exchange opportunities at different academic levels.</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>Are there any fees associated with using Exchange Horizon?</h3>
-        <p>Exchange Horizon is free for students to use. However, there may be fees associated with participating in specific exchange programs, such as application fees or tuition costs.</p>
-    </div>
-</div>
-<div data-role="footer" data-position="fixed" style="border: none;" class="footer">
-    <div data-role="navbar">
-        <ul>
-            <li><a href="program.html" class="ui-btn"><i class="fa-solid fa-star"></i><br>Programs</a></li>
-            <li><a href="faqs.html" class="ui-btn"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
-            <li><a href="index.html" class="ui-btn"><i class="fa-solid fa-house"></i><br>Home</a></li>
-            <li><a href="news.html" class="ui-btn"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
-            <li><a href="contact.html" class="ui-btn"><i class="fa-regular fa-address-book"></i><br>Contact</a>
-            </li>
-        </ul>
-    </div>
-</div>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,89 +11,94 @@
     <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
-<div data-role="page" id="applicationPage">
-    <header>
-        <div data-role="header">
-      <div class="nav-header1">
-        <h3 class="logo-heading"><a href="index.html">Exchange Portal</a></h3>
-      <a href="#menuPanel" class="icon-set"><i class="fa-solid fa-bars"></i></a>
-      </div>
-      <div data-role="panel" id="menuPanel" data-position="right" data-display="overlay" >
-        <ul data-role="listview" style="background-color: darkcyan;">
-        <li><a href="#" data-rel="close"><i class="fa-solid fa-xmark"></i></a></li>
-          <li><a href="download.html" data-rel="close">Download</a></li>
-          <li><a href="application.html" data-rel="close">Application</a></li>
-          <li><a href="accommodation.html" data-rel="close">Accommodation</a></li>
-          <li><a href="About.html" data-rel="close">About Us</a></li>
-         <!--  <li><a href="#" data-rel="close">Link 5</a></li> -->
-        </ul>
-      </div>
-    </div>
-    </header>
-    <div role="main" class="ui-content">
-        <h2 class="acco-h2">Application</h2>
-        <form id="myform">
-            <div data-role="fieldcontain">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    <div data-role="page" id="applicationPage">
+        <header>
+            <div data-role="header">
+                <div class="nav-header1">
+                    <h3 class="logo-heading"><a href="index.html">Exchange Portal</a></h3>
+                    <a href="#menuPanel" class="icon-set"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <div data-role="panel" id="menuPanel" data-position="right" data-display="overlay">
+                    <ul data-role="listview" style="background-color: darkcyan;">
+                        <li><a href="#" data-rel="close"><i class="fa-solid fa-xmark"></i></a></li>
+                        <li><a href="download.html" data-rel="close">Download</a></li>
+                        <li><a href="application.html" data-rel="close">Application</a></li>
+                        <li><a href="accommodation.html" data-rel="close">Accommodation</a></li>
+                        <li><a href="about.html" data-rel="close">About Us</a></li>
+                        <!--  <li><a href="#" data-rel="close">Link 5</a></li> -->
+                    </ul>
+                </div>
             </div>
-            <div data-role="fieldcontain">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-            </div>
-            <div data-role="fieldcontain">
-                <label for="fatherName">Father's Name:</label>
-                <input type="text" name="fatherName" id="fatherName" placeholder="Enter name" required>
-            </div>
-            <div data-role="fieldcontain">
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+0000000000" required>
-            </div>
-            <div data-role="fieldcontain">
-                <label for="gender">Gender:</label>
-                <select name="gender" id="gender" required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div data-role="fieldcontain">
-                <label for="degree" >Choose Degree:</label>
-                <select name="degree" id="degree" class="w-deg-btn" required>
-                    <option value="bachelors">Bachelor's</option>
-                    <option value="masters">Master's</option>
-                    <option value="phd">PhD</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div data-role="popup" id="popup" data-theme="darkcyan" class="ui-content">
-                <p>Successfully submitted</p>
-                <a href="index.html" class="ui-btn ui-btn-darkcyan">Close</a>
-            </div>
+        </header>
+        <div role="main" class="ui-content">
+            <h2 class="acco-h2">Application</h2>
+            <form id="myform">
+                <div data-role="fieldcontain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" name="fatherName" id="fatherName" placeholder="Enter name" required>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+0000000000" required>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="degree">Choose Degree:</label>
+                    <select name="degree" id="degree" class="w-deg-btn" required>
+                        <option value="">Select Degree</option>
+                        <option value="bachelors">Bachelor's</option>
+                        <option value="masters">Master's</option>
+                        <option value="phd">PhD</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div data-role="popup" id="popup" data-theme="darkcyan" class="ui-content" style="display:none;">
+                    <p>Successfully submitted</p>
+                    <a href="index.html" class="ui-btn ui-btn-darkcyan">Close</a>
+                </div>
 
-            <div data-role="content">
-                <button id="submitBtn" data-theme="darkcyan" class="ui-btn " type="submit" style="font-weight: 600 !important;">Submit</button>
-            </div>
-        </form>
-    </div>
+                <div data-role="content">
+                    <button id="submitBtn" data-theme="darkcyan" class="ui-btn " type="submit"
+                        style="font-weight: 600 !important;">Submit</button>
+                </div>
+            </form>
+        </div>
 
-    <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
-        <div data-role="navbar">
-            <ul>
-                <li><a href="program.html" class="ui-btn"><i class="fa-solid fa-star"></i><br>Programs</a></li>
-                <li><a href="faqs.html" class="ui-btn"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
-                <li><a href="index.html" class="ui-btn"><i class="fa-solid fa-house"></i><br>Home</a></li>
-                <li><a href="news.html" class="ui-btn"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
-                <li><a href="contact.html" class="ui-btn"><i class="fa-regular fa-address-book"></i><br>Contact</a>
-                </li>
-            </ul>
+        <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="program.html" class="ui-btn"><i class="fa-solid fa-star"></i><br>Programs</a></li>
+                    <li><a href="faqs.html" class="ui-btn"><i class="fa-solid fa-question"></i></i><br>FAQs</a></li>
+                    <li><a href="index.html" class="ui-btn"><i class="fa-solid fa-house"></i><br>Home</a></li>
+                    <li><a href="news.html" class="ui-btn"><i class="fa-solid fa-newspaper"></i><br>News</a></li>
+                    <li><a href="contact.html" class="ui-btn"><i class="fa-regular fa-address-book"></i><br>Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
 
-<script src="assets/script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
+
 </html>

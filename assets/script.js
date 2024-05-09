@@ -1,7 +1,7 @@
-$(document).on("pagecreate", function() {
-    $("#myform").on("submit", function(event) {
-        event.preventDefault(); 
-        if (this.checkValidity()) { 
+$(document).on("pagecreate", function () {
+    $("#myform").on("submit", function (event) {
+        event.preventDefault();
+        if (this.checkValidity()) {
             $("#popup").popup("open", {
                 positionTo: "window",
                 transition: "pop"
@@ -11,10 +11,10 @@ $(document).on("pagecreate", function() {
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     var images = ["hostel1.jpg", "hostel2.jpg", "hostel3.jpg", "hostel4.jpg"];
     var imageRow = $(".image-row");
-    $.each(images, function(index, value) {
+    $.each(images, function (index, value) {
         var imageWrapper = $("<div>").addClass("image-wrapper");
         var image = $("<img>").attr("src", "assets/img/" + value).attr("alt", "error");
         imageWrapper.append(image);
@@ -28,7 +28,7 @@ $(document).ready(function() {
         "5. <strong>Room:</strong> Experience comfort and convenience in our cozy hostel rooms.",
     ];
     var accoP = $(".acco-p");
-    $.each(accommodation, function(index, value) {
+    $.each(accommodation, function (index, value) {
         var paragraph = $("<p>").html(value);
         accoP.append(paragraph);
     });
@@ -37,15 +37,43 @@ $(document).ready(function() {
 function validateForm() {
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
-    
+
     if (username === "" || email === "") {
-      alert("Please fill in all fields");
-      return false;
+        alert("Please fill in all fields");
+        return false;
     }
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      alert("Invalid email address");
-      return false;
+        alert("Invalid email address");
+        return false;
     }
     return true;
-  }
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var fatherName = document.getElementById("fatherName").value;
+        var phoneNumber = document.getElementById("phoneNumber").value;
+        var gender = document.getElementById("gender").value;
+        var degree = document.getElementById("degree").value;
+
+        if (name === "" || email === "" || fatherName === "" || phoneNumber === "" || gender === "" || degree === "") {
+            alert("Please fill in all fields.");
+            return false;
+        }
+        return true;
+    }
+
+
+    document.getElementById("myform").addEventListener("submit", function (event) {
+        if (!validateForm()) {
+            event.preventDefault();
+        } else {
+
+            document.getElementById("popup").style.display = "block";
+        }
+    });
+});

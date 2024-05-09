@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,32 +9,38 @@
     align-items: center;
     display: flex;
     justify-content: space-between !important;
-    
+
 
     background-color: darkcyan !important;
     border: none !important;
     color: white !important;
 }
-.nav-header1 .icon-set i{
+
+.nav-header1 .icon-set i {
     color: white;
     margin-right: 20px;
     font-size: 20px;
 }
+
 .logo-heading {
     padding: 10px;
 }
-.logo-heading a{
+
+.logo-heading a {
     color: white !important;
     text-decoration: none;
-    
+
 }
+
 h2.ui-title {
     margin-left: 10px !important;
 }
-a{
+
+a {
     text-shadow: none !important;
     box-shadow: none !important;
 }
+
 .custom-header {
     background-color: darkcyan !important;
     border: none !important;
@@ -60,19 +65,23 @@ a{
     margin: 10px 20px;
     text-align: center;
 }
+
 .find-out-btn {
     display: flex;
     justify-content: center;
     margin-bottom: 10px !important;
 }
-.find-out-btn a i{
+
+.find-out-btn a i {
     margin-left: 10px;
 }
-.find-out-btn a{
+
+.find-out-btn a {
     display: inline !important;
 
-    
+
 }
+
 .main-page-img2 {
     background-image: url(img/mainpage2.jpg);
     background-size: cover;
@@ -126,11 +135,13 @@ a{
     font-weight: normal !important;
     box-shadow: none !important;
     text-shadow: none !important;
-    
+
 }
+
 .ui-page {
     background-color: #f9f9f9 !important;
 }
+
 .follow-us .icon {
     margin-top: 20px;
     display: flex;
@@ -156,10 +167,11 @@ input {
 }
 
 .ui-content input,
-textarea{
+textarea {
     background-color: white !important;
 }
-.ui-input-text{
+
+.ui-input-text {
     background-color: #f9f9f9 !important;
 }
 
@@ -185,6 +197,7 @@ textarea{
     border-radius: 20px;
     height: 120px !important;
 }
+
 .contact-btn {
     background-color: darkcyan !important;
     border: none !important;
@@ -294,35 +307,50 @@ textarea{
     margin: 25px 10px;
 }
 
+.set-faqs {
+    margin: 0 10px !important;
+}
+
+.set-faqs p {
+    background-color: #f9f9f9 !important;
+
+}
+
 /* news page */
 
-.ui-body{
+.ui-body {
     display: flex !important;
     justify-content: space-evenly;
     padding: 0 !important;
     max-height: 165px !important;
 }
-.ui-grid-solo{
+
+.ui-grid-solo {
     margin: 0 10px !important;
 }
-.ui-bar{
+
+.ui-bar {
     margin: 10px 0 !important;
 }
 
-.text{
+.text {
     width: 60%;
     padding: 5px 10px;
 }
-.img{
+
+.img {
     width: 40%;
     padding: 0 !important;
 }
-.ui-listview>.ui-li-static, .ui-listview>.ui-li-divider, .ui-listview>li>a.ui-btn{
+
+.ui-listview>.ui-li-static,
+.ui-listview>.ui-li-divider,
+.ui-listview>li>a.ui-btn {
     border: none !important;
     color: white !important;
 }
 
-.text a{
+.text a {
     margin-bottom: 0 !important;
     background-color: darkcyan !important;
     border: none !important;
@@ -330,60 +358,66 @@ textarea{
     color: white !important;
 }
 
-.news-h2{
+.news-h2 {
     font-size: 36px;
 }
-.text h3{
+
+.text h3 {
     font-size: 20px;
     margin-bottom: 3px;
-    
+
 }
-.text p{
+
+.text p {
     font-weight: normal !important;
 }
 
 .read-more-btn {
     padding: 5px !important;
     margin-top: 20px;
-    
+
 }
 
 /* Application Page */
 
-label{
+label {
     font-weight: 600 !important;
 }
 
 
 /* Program Page */
 
-.set{
+.set {
     max-height: 170px !important;
 }
 
-.set .ui-block-a{
+.set .ui-block-a {
     width: 40%;
     padding: 0 !important;
-    
+
 }
-.set .ui-block-a{
+
+.set .ui-block-a {
     width: 140px !important;
     margin-left: 0 !important;
 }
-.set img{
+
+.set img {
     width: 140px !important;
     object-fit: cover;
 }
-.set .ui-block-b{
+
+.set .ui-block-b {
     /* width: 60% !important; */
     padding: 15px;
 
 }
 
-.set .ui-block-b p{
+.set .ui-block-b p {
     margin-top: 5px;
 }
-.ui-grid-a{
+
+.ui-grid-a {
     margin-bottom: 10px;
     background-color: #e9e9e9 !important;
 }
@@ -395,4 +429,17 @@ label{
 .ui-input-search:after {
     display: flex !important;
     justify-content: end !important;
+}
+
+/* About Us */
+
+.aboutus p {
+    text-align: center;
+}
+
+.aboutus .about-img {
+    background: url(img/aboutus.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
