@@ -118,10 +118,17 @@ a{
 .follow-us h2 {
     text-align: center;
 }
-.ui-btn-darkcyan {
+.ui-btn {
     background-color: darkcyan !important;
     color: white !important;
     border-radius: 10px !important;
+    font-weight: normal !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    
+}
+.ui-page {
+    background-color: #f9f9f9 !important;
 }
 .follow-us .icon {
     margin-top: 20px;
@@ -147,8 +154,12 @@ input {
     margin-top: 20px !important;
 }
 
-.ui-content {
+.ui-content input,
+textarea{
     background-color: white !important;
+}
+.ui-input-text{
+    background-color: #f9f9f9 !important;
 }
 
 .form-heading {
@@ -157,7 +168,7 @@ input {
 }
 
 .follow-us {
-    background-color: white !important;
+    /* background-color: white !important; */
 
 }
 
@@ -310,6 +321,11 @@ input {
     width: 40%;
     padding: 0 !important;
 }
+.ui-listview>.ui-li-static, .ui-listview>.ui-li-divider, .ui-listview>li>a.ui-btn{
+    border: none !important;
+    color: white !important;
+}
+
 .text a{
     margin-bottom: 0 !important;
     background-color: darkcyan !important;
@@ -328,4 +344,10 @@ input {
 }
 .text p{
     font-weight: normal !important;
+}
+
+/* Application Page */
+
+label{
+    font-weight: 600 !important;
 }

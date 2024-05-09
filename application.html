@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Contact Us</title>
-    <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application</title>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://kit.fontawesome.com/6061977da9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
 
+<div data-role="page" id="applicationPage">
     <header>
         <div data-role="header">
       <div class="nav-header1">
@@ -33,43 +31,49 @@
       </div>
     </div>
     </header>
-    <div data-role="main" class="ui-content">
-        <h2 class="form-heading">Contact Form</h2>
-        <form class="contact-form" id="myform">
+    <div role="main" class="ui-content">
+        <form>
             <div data-role="fieldcontain">
-                <input type="text" name="name" id="name" required placeholder="Enter your Name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
             </div>
             <div data-role="fieldcontain">
-                <input type="email" name="email" id="email" required placeholder="Enter your Email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
             </div>
             <div data-role="fieldcontain">
-                <input type="text" name="subject" id="subject" required placeholder="Enter Subject">
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" name="fatherName" id="fatherName" placeholder="Enter name" required>
             </div>
             <div data-role="fieldcontain">
-                <textarea name="message" id="message" required placeholder="Type your message here" style="border: 1px solid grey !important; background-color: white !important;"></textarea>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+0000000000" required>
             </div>
-        
+            <div data-role="fieldcontain">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="degree" >Choose Degree:</label>
+                <select name="degree" id="degree" class="w-deg-btn" required>
+                    <option value="bachelors">Bachelor's</option>
+                    <option value="masters">Master's</option>
+                    <option value="phd">PhD</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
             <div data-role="popup" id="popup" data-theme="darkcyan" class="ui-content">
                 <p>Successfully submitted</p>
                 <a href="index.html" class="ui-btn ui-btn-darkcyan">Close</a>
             </div>
-
             <div data-role="content">
                 <button id="submitBtn" data-theme="darkcyan" class="ui-btn " type="submit" style="font-weight: 600 !important;">Submit</button>
             </div>
         </form>
-    </div>
-
-
-
-    <div class="follow-us">
-        <h2>Follow Us</h2>
-        <div class="icon">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
     </div>
 
     <div data-role="footer" data-position="fixed" style="border: none;" class="footer">
@@ -84,9 +88,9 @@
             </ul>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</div>
+
+
 <script src="assets/script.js"></script>
 </body>
-
 </html>
