@@ -9,12 +9,22 @@
     align-items: center;
     display: flex;
     justify-content: space-between !important;
-
-
     background-color: darkcyan !important;
     border: none !important;
     color: white !important;
 }
+.ui-footer {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .ui-header {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 
 .nav-header1 .icon-set i {
     color: white;
