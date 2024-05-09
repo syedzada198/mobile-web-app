@@ -310,7 +310,6 @@ input {
     width: 40%;
     padding: 0 !important;
 }
-
 .text a{
     margin-bottom: 0 !important;
     background-color: darkcyan !important;
@@ -320,5 +319,13 @@ input {
 }
 
 .news-h2{
-    font-size: 28px;
+    font-size: 36px;
+}
+.text h3{
+    font-size: 20px;
+    margin-bottom: 3px;
+    
+}
+.text p{
+    font-weight: normal !important;
 }
