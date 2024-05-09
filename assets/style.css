@@ -453,3 +453,32 @@ label {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.ui-input-search{
+            margin-top: -25px;
+            margin-left: 10px;
+}
+
+.ui-body-inherit,html .ui-panel-page-container-a{
+    margin-top: 44px;
+    box-shadow: none !important;
+}
+
+
+.ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit  {
+    background-color: #f9f9f9 !important;
+    text-shadow: none !important;
+    
+}
+.ui-input-search:after {
+    position: absolute;
+    left: 30px !important;
+    top: 50%;
+    margin-top: -7px;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    filter: Alpha(Opacity = 50);
+    opacity: .5;
+}
