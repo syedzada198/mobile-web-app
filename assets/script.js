@@ -1,6 +1,6 @@
 function submitForm() {
-    document.getElementById("popup").style.display = "block";
-  }
+    document.getElementById("errMsg").innerHTML = '<p style="color: green; border: 2px solid green; padding: 10px; font-weight: 600; font-size: 14px;">Successfully submitted</p>';
+}
 
 $(document).ready(function () {
     var images = ["hostel1.jpg", "hostel2.jpg", "hostel3.jpg", "hostel4.jpg"];
@@ -24,30 +24,29 @@ $(document).ready(function () {
         accoP.append(paragraph);
     });
 });
-addRequiredAttribute();
 
 function validateForm() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
+    let err = false;
+    var name = document.getElementById("nameCntct").value;
+    var email = document.getElementById("emailCntct").value;
+    var subject = document.getElementById("subjectCntct").value;
+    var message = document.getElementById("messageCntct").value;
 
-    if (name === "" || email === "" || subject === "" || message === "") {
-        return false;
-    }
-    function isValidPhoneNumber(phoneNumber) {
-        var phoneRegex = /^\+\d{10,}$/;
-        return phoneRegex.test(phoneNumber);
+    if (name === "" || email === "" || subject === "" || message === "" || !isValidEmail(email)) {
+        err = true;
     }
     function isValidEmail(email) {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
 
-    document.getElementById("successMessage").style.display = "block";
-
-    return true;
-
+    if (err == false) {
+        document.getElementById("errMsg").innerHTML = '<p style="color: green; border: 2px solid green; padding: 10px; font-weight: 600; font-size: 14px;">Successfully submitted.</p>';
+        $('#contactForm').trigger("reset");
+    } else {
+        document.getElementById("errMsg").innerHTML = '<p style="color: red; border: 2px solid red; padding: 10px; font-weight: 600; font-size: 14px;">All fields are required and email should be correct format.</p>';
+    }
+    return false;
 }
 
 
