@@ -77,9 +77,21 @@ function validateForm() {
     if (name === "" || email === "" || subject === "" || message === "") {
         return false;
     }
+    function isValidPhoneNumber(phoneNumber) {
+        var phoneRegex = /^\+\d{10,}$/;
+        return phoneRegex.test(phoneNumber);
+    }
+    function isValidEmail(email) {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
 
     document.getElementById("successMessage").style.display = "block";
 
     return true;
+
 }
+
+
+
 
