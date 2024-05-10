@@ -24,48 +24,6 @@ $(document).ready(function () {
         accoP.append(paragraph);
     });
 });
-
-function validateForm() {
-    var username = document.getElementById("username").value;
-    var email = document.getElementById("email").value;
-
-    if (username === "" || email === "") {
-        alert("Please fill in all fields");
-        return false;
-    }
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert("Invalid email address");
-        return false;
-    }
-    return true;
-}
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     function validateForm() {
-//         var name = document.getElementById("name").value;
-//         var email = document.getElementById("email").value;
-//         var fatherName = document.getElementById("fatherName").value;
-//         var phoneNumber = document.getElementById("phoneNumber").value;
-//         var gender = document.getElementById("gender").value;
-//         var degree = document.getElementById("degree").value;
-
-//         if (name === "" || email === "" || fatherName === "" || phoneNumber === "" || gender === "" || degree === "") {
-//             alert("Please fill in all fields.");
-//             return false;
-//         }
-//         return true;
-//     }
- // Function to add required attribute to all input fields
- function addRequiredAttribute() {
-    var inputFields = document.querySelectorAll('input, textarea');
-    inputFields.forEach(function (element) {
-        element.setAttribute('required', 'true');
-    });
-}
-
-// Call the function to add required attribute
 addRequiredAttribute();
 
 function validateForm() {
