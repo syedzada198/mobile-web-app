@@ -38,23 +38,23 @@
             <form id="myform">
                 <div data-role="fieldcontain">
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
                 </div>
                 <div data-role="fieldcontain">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
                 </div>
                 <div data-role="fieldcontain">
                     <label for="fatherName">Father's Name:</label>
-                    <input type="text" name="fatherName" id="fatherName" placeholder="Enter name" required>
+                    <input type="text" name="fatherName" id="fatherName" placeholder="Enter name">
                 </div>
                 <div data-role="fieldcontain">
                     <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+0000000000" required>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+0000000000">
                 </div>
                 <div data-role="fieldcontain">
                     <label for="gender">Gender:</label>
-                    <select name="gender" id="gender" required>
+                    <select name="gender" id="gender">
                         <option value="">Select Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -63,7 +63,7 @@
                 </div>
                 <div data-role="fieldcontain">
                     <label for="degree">Choose Degree:</label>
-                    <select name="degree" id="degree" class="w-deg-btn" required>
+                    <select name="degree" id="degree" class="w-deg-btn">
                         <option value="">Select Degree</option>
                         <option value="bachelors">Bachelor's</option>
                         <option value="masters">Master's</option>
@@ -71,14 +71,10 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
-                <div data-role="popup" id="popup" data-theme="darkcyan" class="ui-content">
-                    <p>Successfully submitted</p>
-                    <a href="index.html" class="ui-btn ui-btn-darkcyan">Close</a>
-                </div>
-
-
+                <div id="successMessage" style="display: none; color: green;">Successfully submitted!</div>
+    
                 <div data-role="content">
-                    <button id="submitBtn" data-theme="darkcyan" class="ui-btn " type="submit"
+                    <button type="submit" id="submitBtn" data-theme="darkcyan" class="ui-btn"
                         style="font-weight: 600 !important;">Submit</button>
                 </div>
             </form>

@@ -1,15 +1,6 @@
-$(document).on("pagecreate", function () {
-    $("#myform").on("submit", function (event) {
-        event.preventDefault();
-        if (this.checkValidity()) {
-            $("#popup").popup("open", {
-                positionTo: "window",
-                transition: "pop"
-            });
-        }
-    });
-});
-
+function submitForm() {
+    document.getElementById("popup").style.display = "block";
+  }
 
 $(document).ready(function () {
     var images = ["hostel1.jpg", "hostel2.jpg", "hostel3.jpg", "hostel4.jpg"];
@@ -51,29 +42,58 @@ function validateForm() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    function validateForm() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var fatherName = document.getElementById("fatherName").value;
-        var phoneNumber = document.getElementById("phoneNumber").value;
-        var gender = document.getElementById("gender").value;
-        var degree = document.getElementById("degree").value;
+// document.addEventListener("DOMContentLoaded", function () {
+//     function validateForm() {
+//         var name = document.getElementById("name").value;
+//         var email = document.getElementById("email").value;
+//         var fatherName = document.getElementById("fatherName").value;
+//         var phoneNumber = document.getElementById("phoneNumber").value;
+//         var gender = document.getElementById("gender").value;
+//         var degree = document.getElementById("degree").value;
 
-        if (name === "" || email === "" || fatherName === "" || phoneNumber === "" || gender === "" || degree === "") {
-            alert("Please fill in all fields.");
-            return false;
-        }
-        return true;
+//         if (name === "" || email === "" || fatherName === "" || phoneNumber === "" || gender === "" || degree === "") {
+//             alert("Please fill in all fields.");
+//             return false;
+//         }
+//         return true;
+//     }
+ // Function to add required attribute to all input fields
+ function addRequiredAttribute() {
+    var inputFields = document.querySelectorAll('input, textarea');
+    inputFields.forEach(function (element) {
+        element.setAttribute('required', 'true');
+    });
+}
+
+// Call the function to add required attribute
+addRequiredAttribute();
+
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    var fatherName = document.getElementById("fatherName").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    var gender = document.getElementById("gender").value;
+    var degree = document.getElementById("degree").value;
+
+    if (name === "" || email === "" || subject === "" || message === "" || fatherName === "" || phoneNumber === "" || gender === "" || degree === "") {
+        alert("Please fill out all required fields.");
+        return false;
     }
 
+    document.getElementById("successMessage").style.display = "block";
 
-    document.getElementById("myform").addEventListener("submit", function (event) {
-        if (!validateForm()) {
-            event.preventDefault();
-        } else {
+    return true;
+}
 
-            document.getElementById("popup").style.display = "block";
-        }
-    });
-});
+
+    // document.getElementById("myform").addEventListener("submit", function (event) {
+    //     if (!validateForm()) {
+    //         event.preventDefault();
+    //     } else {
+
+    //         document.getElementById("popup").style.display = "block";
+    //     }
+    // });
