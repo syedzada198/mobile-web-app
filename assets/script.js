@@ -73,13 +73,8 @@ function validateForm() {
     var email = document.getElementById("email").value;
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
-    var fatherName = document.getElementById("fatherName").value;
-    var phoneNumber = document.getElementById("phoneNumber").value;
-    var gender = document.getElementById("gender").value;
-    var degree = document.getElementById("degree").value;
 
-    if (name === "" || email === "" || subject === "" || message === "" || fatherName === "" || phoneNumber === "" || gender === "" || degree === "") {
-        alert("Please fill out all required fields.");
+    if (name === "" || email === "" || subject === "" || message === "") {
         return false;
     }
 
@@ -88,12 +83,3 @@ function validateForm() {
     return true;
 }
 
-
-    // document.getElementById("myform").addEventListener("submit", function (event) {
-    //     if (!validateForm()) {
-    //         event.preventDefault();
-    //     } else {
-
-    //         document.getElementById("popup").style.display = "block";
-    //     }
-    // });
